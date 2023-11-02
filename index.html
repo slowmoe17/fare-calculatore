@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+
+    <title>Fare Calculator</title>
+</head>
+<body>
+    
+    <div class=" d-flex justify-content-center align-items-center" style="height: 100vh">
+        
+        <div class="container h-50 w-50  d-flex flex-column justify-content-center">
+            <div class="title">
+                <h1 class="text-center" >Fare Calculator</h1>
+            </div>
+            <div class="fields d-flex flex-column align-items-center ">
+                <label for="distance">Enter Distance in (KM) </label>
+                <input id="distance" class="distance" type="number">
+                <label for="time">Enter Trip Duration in (Min)</label>
+                <input id="time" class="time" type="number" >
+                <p class="pt-5 text-primary">
+                    fare: <span id="fare" class="fare"></span>
+                </p>
+            </div>
+          
+            <button  id="calculate-button" class="btn btn-primary calculate mt-5 w-100 d-flex justify-content-center align-items-center border-2 shadow-lg " >Calculate Fare</button>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
